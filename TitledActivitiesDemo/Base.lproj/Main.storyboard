@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TitledActivitiesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="umg-pq-FUZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sV6-Gw-dmp">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0rJ-Hm-AAK"/>
+                                    <barButtonItem systemItem="action" id="OCq-Rd-92Q">
+                                        <connections>
+                                            <action selector="sharePressed:" destination="BYZ-38-t0r" id="P0F-FO-uFo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EFW-Ck-hpx"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="umg-pq-FUZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RgO-TY-Yx8"/>
+                            <constraint firstItem="umg-pq-FUZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ak7-BZ-3KO"/>
+                            <constraint firstItem="sV6-Gw-dmp" firstAttribute="centerX" secondItem="umg-pq-FUZ" secondAttribute="centerX" id="iUN-YU-BER"/>
+                            <constraint firstItem="sV6-Gw-dmp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="oHR-Rd-ezT"/>
+                            <constraint firstItem="umg-pq-FUZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sdV-57-ntp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sV6-Gw-dmp" secondAttribute="bottom" id="vjR-Om-7j4"/>
+                            <constraint firstItem="umg-pq-FUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8m-3T-vTm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1440" height="1920"/>
+    </resources>
+</document>
